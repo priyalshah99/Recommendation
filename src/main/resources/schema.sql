@@ -1,9 +1,9 @@
 DROP TABLE IF EXISTS orders;
-create table orders
-(
-    id int,
-    product_id varchar(100),
-    customer_ip varchar2(100),
-    product_name varchar2(500),
-    PRIMARY KEY (id)
-);
+
+CREATE TABLE `orders` (
+  `id` int NOT NULL,
+  `customer_ip` varchar(255) DEFAULT NULL,
+  `product_id` varchar(255) DEFAULT NULL,
+  `product_name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
